@@ -1,0 +1,151 @@
+/* src/components/About.css */
+.about-bio {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  text-align: center;
+}
+
+.about {
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Timeline container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 90%;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 14px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -2rem;
+  top: 1.3rem;
+  width: 32px;
+  height: 32px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.3);
+}
+
+
+.timeline-item .info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.timeline-item .info p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Resume Download Button */
+.resume-download {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+.resume-btn {
+  background-color: #58a6ff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #007acc;
+}
+
+/* Certifications Grid */
+.cert-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.cert-card {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px var(--shadow);
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-card h4 {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .timeline-item .info h3 {
+    font-size: 1.05rem;
+  }
+
+  .timeline-item .info p {
+    font-size: 0.95rem;
+  }
+}

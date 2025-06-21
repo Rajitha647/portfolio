@@ -1,0 +1,148 @@
+/* src/components/Home.css */
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.particles {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.text-column {
+  flex: 1;
+  z-index: 2;
+}
+
+.text-column h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-column .highlight {
+  color: #58a6ff;
+}
+
+.typed-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: block;
+  color: #58a6ff;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background: #58a6ff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background: #007acc;
+  transform: scale(1.05);
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.6);
+  transition: transform 0.4s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+.about-list {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.about-list p {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.fade-in {
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-column h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-image {
+    margin-top: 2rem;
+  }
+}
