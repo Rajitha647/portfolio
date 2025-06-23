@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'Smart Grocery App',
+    title: 'Weather App',
     description: 'Weather app built using React.js weather API.',
     tags: ['React', 'Weather API'],
     link: 'https://github.com/Rajitha647/weatherApp'
