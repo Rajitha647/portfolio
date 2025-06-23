@@ -39,7 +39,7 @@ function Projects() {
               rel="noopener noreferrer"
               className="project-link"
             >
-              <FaGithub className="github-icon" /> View 
+              <FaGithub className="github-icon" /> View on GitHub /In Live 
             </a>
           </div>
         ))}
