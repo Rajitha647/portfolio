@@ -8,13 +8,13 @@ const projects = [
     title: 'Weather App',
     description: 'Weather app built using React.js weather API.',
     tags: ['React', 'Weather API'],
-    link: 'https://github.com/Rajitha647/weatherApp'
+    link: 'https://weather-app-olive-zeta-ocg2ey1y2y.vercel.app/'
   },
   {
     title: 'Portfolio Site',
     description: 'Personal website built using React and hosted on Render.',
     tags: ['React', 'CSS', 'Render'],
-    link: 'https://github.com/Rajitha647/portfolio'
+    link: 'https://mypersonalporfolio.vercel.app/'
   }
 ];
 
