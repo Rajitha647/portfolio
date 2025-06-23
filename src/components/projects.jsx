@@ -32,14 +32,14 @@ function Projects() {
                 <span key={tag}>{tag}</span>
               ))}
             </div>
-            GitHub :
+           
             <a
               href={proj.link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              <FaGithub className="github-icon" /> View on GitHub
+              <FaGithub className="github-icon" /> View 
             </a>
           </div>
         ))}
