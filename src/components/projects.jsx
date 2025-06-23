@@ -6,15 +6,15 @@ import { FaGithub } from 'react-icons/fa';
 const projects = [
   {
     title: 'Smart Grocery App',
-    description: 'Drag-and-drop smart grocery list with real-time syncing.',
-    tags: ['React', 'Node', 'MongoDB'],
-    link: 'https://github.com/your/grocery-app'
+    description: 'Weather app built using React.js weather API.',
+    tags: ['React', 'Weather API'],
+    link: 'https://github.com/Rajitha647/weatherApp'
   },
   {
     title: 'Portfolio Site',
     description: 'Personal website built using React and hosted on Render.',
     tags: ['React', 'CSS', 'Render'],
-    link: 'https://github.com/yourusername/portfolio-site'
+    link: 'https://github.com/Rajitha647/portfolio'
   }
 ];
 
