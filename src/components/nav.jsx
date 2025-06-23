@@ -5,12 +5,9 @@ function Navbar() {
   const { darkMode, setDarkMode } = useTheme();
 
   return (
-    <header className="navbar">
+    <header className="navbar" style={{height:"30px"}}>
       <div className="logo">
-      
         <h4>Rajitha</h4>
-         
-        
         </div>
 
       <nav>
